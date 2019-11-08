@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="images/best_hellcat_livery.png" rel="icon" type="image/x-icon" />
+		<title>Forza Horizon 4 Upgrade Simulator</title>
+		<link rel="stylesheet" href="style.css" />
+		<link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+		<script src="variables.js"></script>
+	</head>
+	<body>
+		<div class="car">
+			<img src="images/left-arrow.gif" class="left arrow" onclick="changeImgLeft()">
+			<img id="car" src="images/dodge_charger.jpg">
+			<img src="images/right-arrow.gif" class="right arrow" onclick="changeImgRight()">
+		</div>
+		<div class="statistics-upgrades">
+			<div class="statistics">
+				<h1 id="speed"></h1>
+				<h1 id="handling"></h1>
+				<h1 id="acceleration"></h1>
+				<h1 id="launch"></h1>
+				<h1 id="braking"></h1>
+				<h1 id="hp"></h1>
+				<h1 id="g-force"></h1>
+				<h1 id="weight"></h1>
+			</div>
+			<div class="upgrades-options">
+				<div class="upgrades">
+					<div class="upgrade-button" onclick="var speed = 10;">
+						<p>Engine</p>
+					</div>
+					<div class="upgrade-button">
+						<p>Handling</p>
+					</div>
+					<div class="upgrade-button">
+						<p>Drivetrain</p>
+					</div>
+					<div class="upgrade-button">
+						<p>Wheels</p>
+					</div>
+					<div class="upgrade-button">
+						<p>Aerodynamics</p>
+					</div>
+					<div class="upgrade-button">
+						<p>Engine Swap</p>
+					</div>
+				</div>
+				<div class="options">
+					<div class="option-button">
+						<p>Back</p>
+					</div>
+					<div class="option-button">
+						<p>Reset Upgrades</p>
+					</div>
+					<div class="option-button">
+						<p>Finish</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
